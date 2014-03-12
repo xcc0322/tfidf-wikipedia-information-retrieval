@@ -1,0 +1,18 @@
+-src
+	-wiki_retrieval
+		core, including 6 jobs for TFIDF calculation
+	-helloXML
+		inputfile preprocessing
+	-HBaseTestGoodApi
+		hbase query test
+	-WikiTfidf
+		Project Query Server
+-bin
+	-wiki.jar
+		package that can run directly on Hadoop cluster
+-.pdf
+	report
+-.pptx
+	presentation
+-reference
+	some useful documents and tools for reference
