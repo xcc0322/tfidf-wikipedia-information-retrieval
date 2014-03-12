@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<!DOCTYPE web-app 
+PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" 
+"http://java.sun.com/dtd/web-app_2_3.dtd"> 
+<web-app>
+	<display-name>My Web Application</display-name>
+	<description>A application for test.</description>
+	
+	<servlet>
+		<servlet-name>WordQuery</servlet-name>
+		<servlet-class>wtfidf.WordQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WordQuery</servlet-name>
+		<url-pattern>/word-query</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DocQuery</servlet-name>
+		<servlet-class>wtfidf.DocQuery</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DocQuery</servlet-name>
+		<url-pattern>/doc-query</url-pattern>
+	</servlet-mapping>
+</web-app>

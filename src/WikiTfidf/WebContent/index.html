@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<!-- http://en.wikipedia.org/wiki/AfghanistanPeople -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/ico/favicon.png">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <!-- Custom styles for this template -->
+    <link href="static/starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WTI</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    
+    
+    
+   <div class="jumbotron">
+    <div class="container">
+      <div class="starter-template">
+        <h1>Wikipedia TFIDF Project</h1>
+        <p class="lead">Use Hadoop to calculate TFIDF of Wikipedia webpages.<br>
+		This is my demo page.</p>
+      </div>
+    </div><!-- /.container -->
+    </div>
+    
+   <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Query top-k documents.</h2>
+          <form method=POST action="word-query">
+        	<input type="text" name="word" class="form-control" placeholder="Word" required autofocus >
+        	<input type="text" name="k" class="form-control" pattern="[1-9]\d?|100" placeholder="K(1-20)" required>
+            <p><button type="submit" class="btn btn-default">Show it &raquo;</button></p><br><br>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h2>Query top-k words.</h2>
+          <form method=POST action="doc-query">
+        	<input type="text" name="doc" class="form-control" placeholder="Document Headline">
+        	<input type="text" name="k" class="form-control" pattern="[1-9]\d?|100" placeholder="K(1-20)" required>
+            <p><button type="submit" class="btn btn-default">Show it &raquo;</button></p><br><br>
+          </form>
+       </div>
+      </div>
+   </div>
+
+   <div class="jumbotron">
+    <div class="container">
+        <a name="about"></a>
+        <h1>About</h1>
+        <p class="lead">This is my final project for big data course.<br>
+		It is from 2013.11.22 to 2013.12.19.<br>
+		In this project I tried to work with Hadoop for the first time. It is a good chance for me <br>
+		to learn about calculation under distributed system and gain more programming experience<br>
+		by implementing TF-IDF algorithm my self.</p>
+    </div><!-- /.container -->
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted credit">
+                <span><a href="http://weibo.com/sunnyclick" target="_blank">WTfIdf</a></span>:
+                Calculate TFIDF under Hadoop and provide a demo query service. <a href="static/ppt/" target="_blank">Slides</a>
+                <span class="pull-right">
+                    Copyright &copy; 2013 <a href="http://weibo.com/sunnyclick" target="_blank">Chengcheng Xu</a>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/html5.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  </body>
+</html>
